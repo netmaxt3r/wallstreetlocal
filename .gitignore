@@ -1,28 +1,44 @@
-whale-project.code-workspace
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-start.sh
-**/.env
-.env.*
-
-.vscode
-
-node_modules
-.pnp
+# dependencies
+/node_modules
+/.pnp
 .pnp.js
+.yarn/install-state.gz
 
-coverage
+# testing
+/coverage
 
-.next
-out
+# next.js
+/.next/
+/out/
 
-build
+# production
+/build
 
+# misc
 .DS_Store
 *.pem
 
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
 
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+whale-project.code-workspace
+start.sh
+**/.env
+.env.*
+.vscode
+.idea
+.pnpm-debug.log*
 docker-proj.zip
